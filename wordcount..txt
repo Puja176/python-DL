@@ -1,0 +1,21 @@
+ Write a program that accepts a sentence and prints the number of letters and digits in 
+Sentence.
+•
+Sample input:
+•Python CS 5590
+•
+Sample output:
+•Letters: 8   
+Digits: 4
+
+s = input("INPUT A STRING")
+d=l=0
+for c in s:
+    if c.isdigit():
+        d=d+1
+    elif c.isalpha():
+        l=l+1
+    else:
+        pass
+print("Letters", l)
+print("Digits", d)

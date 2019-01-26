@@ -1,0 +1,14 @@
+2. Write a python program for the following:
+–
+Take the user first name and last name and print it in reversed form
+Sample input:
+•Firstname: George         Lastname: Thorpe
+•
+Sample output:
+•
+egroeG eprohT
+
+
+fname = input("INPUT YOUR FIRST NAME: ")
+lname = input("INPUT YOUR LAST NAME: ")
+print(lname + "  " + fname )
