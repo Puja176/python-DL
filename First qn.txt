@@ -1,0 +1,19 @@
+
+
+1.)If we are porting our code or executing the python 3 code in python 2, integer division changes go unnoticed (since it doesn’t raise any error). It is preferred to use the floating value (like 7.0/5 or 7/5.0) to get the expected result when porting our code.
+for example:
+print 7 / 5
+print -7 / 5    
+  
+ 
+Output in Python 2
+1 
+-2 
+Output in Python 3.
+1.4 
+-1.4 
+
+2.)This is the most well known change. In this the print function in Python 2 is replaced by print() function in Python 3,i.e, to print in Python 3.x an extra pair of parenthesis is required.
+
+print 'Hello, Geeks'    (Pyhton 2)  
+print('Hope You like these facts') (Python 3)
