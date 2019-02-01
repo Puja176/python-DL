@@ -1,0 +1,19 @@
+2.
+Write a python program to implement Stack and Queue data structures using “List” and 
+its functions in python:
+
+Program
+stack = ["Puja", "Akhil", "ALK"]
+stack.append("Ram")
+stack.append("Antony")
+print(stack)
+print(stack.pop())
+print(stack)
+print(stack[-1])
+from collections import deque
+queue = deque(["A", "B", "C"])
+queue.append("D")
+queue.append("E")
+print(queue)
+queue.popleft()
+print(queue)

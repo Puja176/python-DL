@@ -1,0 +1,21 @@
+1.
+Write a python program to take the total number of plants as an input on first line and all 
+the space separated heights of the plants on a second line. Finally Output the average 
+height value on a single line to three decimals.
+Inp
+ut:
+10 
+10161 182 161 154 176 170 167 171 170 174
+Output:
+169.3gram
+Program:
+
+num = int(input('How many numbers: '))
+sum = 0
+
+for n in range(num):
+    numbers = float(input('Enter number : '))
+    sum += numbers
+
+avg = sum/num
+print('Average of ', num, ' numbers is :', avg)
