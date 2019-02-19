@@ -1,0 +1,29 @@
+3. Compare the results and report accuracy, precision, F-measure and Recall
+
+A.)      Accuracy for Naive's theorem is 100%
+
+
+            precision    recall   f1-score   support
+
+    Iris-setosa        1.00      1.00      1.00        13
+Iris-versicolor        1.00      1.00      1.00        16
+ Iris-virginica         1.00      1.00      1.00         9
+  
+      micro avg        1.00      1.00      1.00        38
+      macro avg       1.00      1.00      1.00        38
+   weighted avg      1.00      1.00      1.00        38
+
+------------------------------------------------------------------------------------
+
+Accuracy for SVM is  97%
+
+
+                      precision    recall  f1-score   support
+
+    Iris-setosa      1.00      1.00      1.00        13
+Iris-versicolor      1.00      0.94      0.97        16
+ Iris-virginica        0.90      1.00      0.95         9
+
+      micro avg       0.97      0.97      0.97        38
+      macro avg      0.97      0.98      0.97        38
+   weighted avg     0.98      0.97      0.97        38
