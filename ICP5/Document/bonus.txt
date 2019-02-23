@@ -1,0 +1,4 @@
+*Bonus
+
+It may be helpfull for taking mean values and constant values rather than taking null values.
+ We can also use the range of ages which is also one of the advantages.
