@@ -8,19 +8,19 @@ sns.set(style="white", color_codes=True)
 import warnings
 warnings.filterwarnings("ignore")
 
-dataset = pd.read_csv('College.csv')
+dataset = pd.read_csv('C:/Users/pooja/Documents/Python_Lesson5/Python_Lesson5/data/College.csv')
 x = dataset.iloc[:,2:9]
-#y = dataset.iloc[:-1]
+y = dataset.iloc[:-1]
 
 # see how many samples we have of each species
-#print(dataset["Species"].value_counts())
+print(dataset["Species"].value_counts())
 
-#sns.FacetGrid(dataset, hue="Private", size=4).map(plt.scatter, "Accept", "Enroll") 
-#   .add_legend()
+sns.FacetGrid(dataset, hue="Private", size=4).map(plt.scatter, "Accept", "Enroll")
+  # .add_legend()
 ## do same for petals
 #sns.FacetGrid(dataset, hue="Species", size=4) \
-#   .map(plt.scatter, "PetalLengthCm", "PetalWidthCm") \
-#   .add_legend()
+ #  .map(plt.scatter, "PetalLengthCm", "PetalWidthCm") \
+  # .add_legend()
 #plt.show()
 # note that the species are nearly linearly separable with petal size,but sepal sizes are more mixed.
 
@@ -69,14 +69,14 @@ print('silhouette_score :', score)
 
 # so let's look at the distribution of silhouette scores...
 
-# scores = metrics.silhouette_samples(X_scaled, y_cluster_kmeans)
-# sns.distplot(scores)
+#scores = metrics.silhouette_samples(X_scaled, y_cluster_kmeans)
+#sns.distplot(scores)
 # # can we add the species info to that plot?
 # # well, can plot them separately using pandas -
-# df_scores = pd.DataFrame()
-# df_scores['SilhouetteScore'] = scores
-# df_scores['Species'] = dataset['Species']
-# df_scores.hist(by='Species', column='SilhouetteScore', range=(0,1.0), bins=20);
+#df_scores = pd.DataFrame()
+#df_scores['SilhouetteScore'] = scores
+#df_scores['Species'] = dataset['Species']
+#df_scores.hist(by='Species', column='SilhouetteScore', range=(0,1.0), bins=20);
 
 wcss = []
 ##elbow method to know the number of clusters
